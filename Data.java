@@ -1,10 +1,15 @@
 //bryant vail
 //static variables capatilized
-import java.utility.Random;
+import java.util.Random;
+import java.util.Arrays;
+
+
 public class Data {
     //data members
     public final int CONSTANT = 20;
-    public int[] ary ;
+    public int[]    ary ;
+    public double   avg;
+    public int      sum;
 
     //default constructor
     public Data(){
@@ -28,18 +33,45 @@ public class Data {
             ary[i] = 0;//array 20 elements, all of value 0.
         }//end for
 
-        InitArrayRandom(){
+        public void InitArrayRandom(){
+            Random randm = new Random(-1);//troubleshoot the code w/-1 then change to conventioin date after perhaps
+            for(int i = 0; i<CONSTANT; i++){
+                ary[i] = randm.nextInt(100);
 
+            }//end for
         }//end InitArrayRandom
     }//end InitArray
 
 
+    public void SortArray(){
+        Arrays.sort(ary);
+    }
+
+    public void SumArray(){
+        int total= 0;
+        for(int i = 0; i<CONSTANT; i++){
+            
+            total += ary[i];
+        }
+    }//end SumArray()
+
+    public void AverageArray(){
+
+    }
+
+    Public Display(){
+        System.out.println(Arrays.toString(ary));
+    }
+
+    /*
+        objects are always passed by reference
+        parameters/arguments are passed by value
+    */
 
 
 
 
-
-}
+}//end class Data
 
 
 
