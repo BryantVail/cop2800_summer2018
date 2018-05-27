@@ -27,13 +27,18 @@ public class Person {
 		this.lastName = last;
 	}
 	
+	//init first/last as ""
 	public void initFirstName() {
 		firstName	= "";
-		
 	}
 	
 	public void initLastName() {
 		lastName = "";
+	}//end initLastName
+	
+	@Override
+	public void toString() {
+		System.out.println("Last: "+GetLastName+", First: "+GetFirstName());
 	}
 
 }
