@@ -43,8 +43,8 @@ public class Person {
 	}//end initLastName
 	
 	@Override
-	public void toString() {
-		System.out.println("Last: "+GetLastName+", First: "+GetFirstName());
+	public String toString() {
+		return ("Last: "+GetLastName()+", First: "+GetFirstName());
 	}
 
 }

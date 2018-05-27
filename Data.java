@@ -30,8 +30,7 @@ public class Data {
         	/*
                 pointing to a reference, where it resides in consecutive memory
                 'i' is the "offset" of the array's memory location
-            */
-            
+            */            
         }//end for
     }//end InitArray
 
