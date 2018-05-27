@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class Data {
     //data members
-    public final int CONSTANT = 20;
+    public final int CONSTANT = 10;
     public int[]    ary ;
     public double   avg;
     public int      sum;
@@ -48,20 +48,39 @@ public class Data {
         Arrays.sort(ary);
     }
 
-    public void SumArray(){
+    public int SumArrayInt(int[] arry){
     	int total = 0;
-    	sum = 0;
-    	
-        for(int i = 0; i<CONSTANT; i++){
-            
-            total += ary[i];
-        }        
-        sum = total;
-    }//end SumArray()
+    	for(int i = 0;i<arry.length; i++) {
+    		
+    		total += arry[i];
+    	}
+    	return total;
+    }//end SumArrayInt()
+    
+    public double SumArrayDbl(double[] arry) {
+    	double total = 0;
+    	for(int i = 0;i<arry.length; i++) {
+    		
+    		total += arry[i];
+    	}
+    	return total;
+    }//end SumArrayDbl
 
-    public void AverageArray(){
-    	//java.util avg
-    }
+    public double AverageArray(double[] theArray){
+    	//locals
+    	double arraySum;
+    	int arrayLength = 0;
+    	double average = 0;
+    	
+    	//denominator of Avg
+    	arrayLength = theArray.length;
+    	
+    	//Numerator of Avg
+    	arraySum = SumArrayDbl(theArray);
+    	average = arraySum/arrayLength;
+    	
+    	return average;    	
+    }//end AverageArray
 
     public void Display(){
         System.out.println(Arrays.toString(ary));
@@ -80,32 +99,16 @@ public class Data {
 /*
  * 
  * Class Data shall have: 
- * 	an array of integers with ten elements.
-	Initialize array auto to 0. 
-	Initialize array with random numbers, 
+ * 	an array of integers with ten elements.		xx	
+	Initialize array auto to 0. 				xx	InitArray()
+	Initialize array with random numbers, 		xx	InitArrayRandom()
 		from 0 to 100.
 	Sort the array.
-		sum the array.
-		average of the array.
-		Print all data to console
+		sum the array.							xx	SumArray()
+		average of the array.					x
+		Print all data to console				xx	public void Display(){				
 			a method called Display().
  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
