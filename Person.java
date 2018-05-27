@@ -1,4 +1,5 @@
-
+//Bryant Vail
+//pr1, Project 1, classes "Person", "Data", & "Main".
 public class Person {
 	private String firstName;
 	private String lastName	;
@@ -7,6 +8,11 @@ public class Person {
 		initFirstName	();
 		initLastName	();
 		
+	}
+	
+	public Person(String firstname, String lastname) {
+		SetFirstName(firstname);
+		SetLastName(lastname);
 	}
 	
 	//Get/Set FirstName
