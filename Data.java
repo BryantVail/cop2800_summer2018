@@ -51,17 +51,17 @@ public class Data {
 
     public void SumArray(){
     	int total = 0;
-        
+    	sum = 0;
+    	
         for(int i = 0; i<CONSTANT; i++){
             
             total += ary[i];
-        }
-        sum = 0;
+        }        
         sum = total;
     }//end SumArray()
 
     public void AverageArray(){
-
+    	//java.util avg
     }
 
     public void Display(){
