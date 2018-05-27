@@ -26,11 +26,12 @@ public class Data {
         //7 & 13 characters 
         //Single Responsibility / what is the purpose
         for(int i = 0;i<CONSTANT;i++){
-            /*
+        	ary[i] = 0;		//array 20 elements, all of value 0.
+        	/*
                 pointing to a reference, where it resides in consecutive memory
                 'i' is the "offset" of the array's memory location
             */
-            ary[i] = 0;//array 20 elements, all of value 0.
+            
         }//end for
     }//end InitArray
 
@@ -77,7 +78,19 @@ public class Data {
 
 }//end class Data
 
-
+/*
+ * 
+ * Class Data shall have: 
+ * 	an array of integers with ten elements.
+	Initialize array auto to 0. 
+	Initialize array with random numbers, 
+		from 0 to 100.
+	Sort the array.
+		sum the array.
+		average of the array.
+		Print all data to console
+			a method called Display().
+ */
 
 
 
