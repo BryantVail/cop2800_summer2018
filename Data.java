@@ -66,7 +66,7 @@ public class Data {
     	return total;
     }//end SumArrayDbl
 
-    public double AverageArray(double[] theArray){
+    public double AverageArrayDbl(double[] theArray){
     	//locals
     	double arraySum;
     	int arrayLength = 0;
@@ -81,10 +81,32 @@ public class Data {
     	
     	return average;    	
     }//end AverageArray
+    
+    public double AverageArrayInt(int[] theArray){
+    	//locals
+    	int arraySum;
+    	int arrayLength = 0;
+    	double average = 0;
+    	
+    	//denominator of Avg
+    	arrayLength = theArray.length;
+    	
+    	//Numerator of Avg
+    	arraySum = SumArrayInt(theArray);
+    	average = arraySum/arrayLength;
+    	
+    	return average;    	
+    }//end AverageArray    
 
     public void Display(){
-        System.out.println(Arrays.toString(ary));
-    }
+        System.out.println(
+        		"Elements: " + Arrays.toString(ary) +
+        		"\n"+
+        		"Sum of Array \t \t"+SumArrayInt(ary) + ", "+
+        		"\n" +
+        		"Average \t \t"+ AverageArrayInt(ary)
+        		);
+    }//end Display()
 
     /*
         objects are always passed by reference
@@ -99,13 +121,13 @@ public class Data {
 /*
  * 
  * Class Data shall have: 
- * 	an array of integers with ten elements.		xx	
+ * 	an array of integers with ten elements.		xx	int CONSTANT = 10;
 	Initialize array auto to 0. 				xx	InitArray()
 	Initialize array with random numbers, 		xx	InitArrayRandom()
 		from 0 to 100.
 	Sort the array.
-		sum the array.							xx	SumArray()
-		average of the array.					x
+		sum the array.							xx	SumArrayInt/Dbl()
+		average of the array.					xx	AverageArrayDbl/Int()
 		Print all data to console				xx	public void Display(){				
 			a method called Display().
  */
