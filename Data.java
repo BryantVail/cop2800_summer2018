@@ -49,12 +49,14 @@ public class Data {
     }
 
     public void SumArray(){
-    	private int total = 0;
+    	int total = 0;
         
         for(int i = 0; i<CONSTANT; i++){
             
             total += ary[i];
         }
+        sum = 0;
+        sum = total;
     }//end SumArray()
 
     public void AverageArray(){
