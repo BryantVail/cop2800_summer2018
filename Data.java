@@ -32,15 +32,16 @@ public class Data {
             */
             ary[i] = 0;//array 20 elements, all of value 0.
         }//end for
+    }//end InitArray
 
-        public void InitArrayRandom(){
+     public void InitArrayRandom(){
             Random randm = new Random(-1);//troubleshoot the code w/-1 then change to conventioin date after perhaps
             for(int i = 0; i<CONSTANT; i++){
                 ary[i] = randm.nextInt(100);
 
             }//end for
-        }//end InitArrayRandom
-    }//end InitArray
+     }//end InitArrayRandom
+
 
 
     public void SortArray(){
@@ -48,7 +49,8 @@ public class Data {
     }
 
     public void SumArray(){
-        int total= 0;
+    	private int total = 0;
+        
         for(int i = 0; i<CONSTANT; i++){
             
             total += ary[i];
@@ -59,7 +61,7 @@ public class Data {
 
     }
 
-    Public Display(){
+    public void Display(){
         System.out.println(Arrays.toString(ary));
     }
 
