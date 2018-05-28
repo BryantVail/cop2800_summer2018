@@ -100,11 +100,11 @@ public class Data {
 
     public void Display(){
         System.out.println(
-        		"Elements: " + Arrays.toString(ary) +
+        		"Elements \t\t" + Arrays.toString(ary) +
         		"\n"+
-        		"Sum of Array \t \t"+SumArrayInt(ary) + ", "+
+        		"Sum of Array \t\t"+SumArrayInt(ary) + ", "+
         		"\n" +
-        		"Average \t \t"+ AverageArrayInt(ary)
+        		"Average \t\t"+ AverageArrayInt(ary)
         		);
     }//end Display()
 
