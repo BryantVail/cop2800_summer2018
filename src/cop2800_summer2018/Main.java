@@ -42,7 +42,14 @@ public class Main {
 		pL.pNext = new Character("Garfield");
 		pL  = pL.pNext;
 		
-		
+		while(true){
+			if(pL.pNext == null){
+				break;	
+			}
+			System.out.println(pL.Name);
+			pL = pL.pNext;
+			
+		}
 		
 		
 		
