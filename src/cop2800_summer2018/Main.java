@@ -35,6 +35,66 @@ public class Main {
 		
 		pList.pNext = new Character("Garfield");
 		pList.pNext.pNext = new Character("Tweety");
+		
+		Character pL;
+		pL = pList;
+		
+		pL.pNext = new Character("Garfield");
+		pL  = pL.pNext;
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }
