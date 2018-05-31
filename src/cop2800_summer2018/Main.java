@@ -30,6 +30,11 @@ public class Main {
 		for(int i = 0; i<CharacterList.size(); i++){
 			System.out.println(CharacterList.get(i).Name);
 		}//end for
+		
+		Character pList = new Character("Snoopy");
+		
+		pList.pNext = new Character("Garfield");
+		pList.pNext.pNext = new Character("Tweety");
 	}
 
 }

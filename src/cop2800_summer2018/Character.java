@@ -9,17 +9,19 @@ public class Character {
 	
 	//DATA MEMBERS
 	String Name;
+	Character pNext;
 	
 	//Constructor
 	public Character(){
 		Name="";
+		pNext = null;//has to be null until the object is instantiated
 	}
 	
 	public Character(String name){
 		this.Name = name;
-		
+		pNext = null;//has to be null until the object is instantiated
 	}
 	
-	
+	//llamda = function || object without a name
 	
 }
