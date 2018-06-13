@@ -35,6 +35,28 @@ public class Main {
 		
 		pList.pNext = new Character("Garfield");
 		pList.pNext.pNext = new Character("Tweety");
+<<<<<<< HEAD
+=======
+		
+		Character pL;
+		pL = pList;
+		
+		pL.pNext = new Character("Garfield");
+		pL  = pL.pNext;
+		
+		while(true){
+			if(pL.pNext == null){
+				break;	
+			}
+			System.out.println(pL.Name);
+			pL = pL.pNext;
+			
+		}
+		
+		
+		
+
+>>>>>>> 0ebf8a320219d39c4909aa7c31040a126f110de0
 	}
 
 }
