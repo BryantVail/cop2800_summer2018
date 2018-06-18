@@ -1,0 +1,45 @@
+redirectCode: "4/AAAWhRmyZxP2-H4j3yDjFj4qIAVV9g0LE5vdPKIeh5n6Sf9Hhvf-QII0gyWN7L_Pssiwt7RVNcKsvYVO6YeTFSg#"
+
+http://localhost:3001/auth/google
+
+
+Create a new project and call it Pr2. 
+Your project shall have 
+	3 classes, which are 
+		Main, 
+		Mammal, and 
+		Canis.
+
+The class 
+	Canis shall have 
+		data members 
+		describing the animal. 
+		For example a data member called 
+			type (String) should receive 
+				a value "Wolf". 
+	The animal should have a 
+		birth date, and 
+		gender (male or female).
+
+The class Mammal shall have 
+	data members describing the type species. Therefore the class needs a data member called 
+		specie (String) which in our case should hold 
+			the value Canine. Mammals have a 
+		life expectancy and it varies considerably between the difference species. You could include a data member called lifeExpectancy (int). Canines get about 12 years old. Some mammals can fly, you could have a variable that indicates it as a boolean Aerial. 
+
+The class Canis shall 
+	inherit from 
+		class Mammal. Mammal is the 
+		super class and 
+	Canis is the 
+		sub class. You only need to have 
+	two or three data members per class.
+
+Class Main shall 
+	instantiate 
+		one object of 
+			type Canis and 
+		display 
+			the associated data to the console.
+
+I am evaluating the project considering the object oriented concepts. Format the code. Put your name on each file. Only submit the *.java files.
