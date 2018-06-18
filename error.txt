@@ -1,0 +1,12 @@
+let errors:[
+	{
+		"message":	"cannot find runtime 'node' on path",
+		"program":	"visual studio code", 
+		"solution":	"download node.js, & reboot machine"
+	},
+	{
+		"message":	"another installation is in progress. you must complete that installation before continuing this one.",
+		"program":	"virtualBox",
+		"solution":	"",
+		"description":	"installing virtualBox"
+	},
