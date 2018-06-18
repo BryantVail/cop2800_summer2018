@@ -21,11 +21,15 @@ The class
 		birth date, and 
 		gender (male or female).
 
+****
 The class Mammal shall have 
 	data members describing the type species. Therefore the class needs a data member called 
-		specie (String) which in our case should hold 
-			the value Canine. Mammals have a 
-		life expectancy and it varies considerably between the difference species. You could include a data member called lifeExpectancy (int). Canines get about 12 years old. Some mammals can fly, you could have a variable that indicates it as a boolean Aerial. 
+		specie (String) which in our case 				should hold the value 					Canine. Mammals have a 
+			life expectancy and it 			varies considerably between 			the difference species. You 			could include a data member 			called 
+		lifeExpectancy (int). Canines get 			about 12 years old. Some 			mammals can fly, you could 			have a variable that 			indicates it as a 
+		boolean Aerial. 
+
+= = = = = = = = =
 
 The class Canis shall 
 	inherit from 
@@ -34,6 +38,9 @@ The class Canis shall
 	Canis is the 
 		sub class. You only need to have 
 	two or three data members per class.
+		teethCount
+		gender
+		
 
 Class Main shall 
 	instantiate 
